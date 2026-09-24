@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Club Deportivo</string>
+    <string name="app_lema">Portal administrativo</string>
+    <string name="app_user">Usuario</string>
+    <string name="app_password">Contraseña</string>
+    <string name="app_biometrics">Ingresar con biometria</string>
+    <string name="app_login">Ingresar</string>
+    <string name="app_new_student">Nuevo alumno</string>
+    <string name="app_student_name">Nombre</string>
+</resources>

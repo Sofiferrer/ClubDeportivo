@@ -8,64 +8,63 @@
     android:padding="24dp"
     android:orientation="vertical"
     android:gravity="center">
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/logo_club"
-        android:contentDescription="@string/app_name" />
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hola administardor!"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Federico Gomez"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo_club"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_lema"
+        android:text="Hoy vencen las cuotas de 4 socios"
         android:textSize="16sp"
-        android:gravity="center"
-        android:layout_marginBottom="20dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:hint="@string/app_user"
-        android:inputType="text"
+        android:textColor="@color/orange"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/primary" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:hint="@string/app_password"
-        android:inputType="textPassword"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/primary"/>
+        android:background="@drawable/toast" />
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnAddStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_login"
-        android:backgroundTint="@color/primary" />
-    <TextView
+        android:text="Inscribir Alumno"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white" />
+    <Button
+        android:id="@+id/btnViewStudents"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_biometrics"
-        android:textSize="14sp"
-        android:gravity="center"
-        android:layout_marginTop="30dp"/>
-    <ImageView
-        android:id="@+id/imgFingerprint"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/fingerprint"
-        android:background="@drawable/bg_circle_fingerprint"
-        android:contentDescription="@string/app_biometrics"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="5dp"/>
+        android:text="Ver inscriptos"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/btnListOverdue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listado de vencimientos"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white" />
 </LinearLayout>

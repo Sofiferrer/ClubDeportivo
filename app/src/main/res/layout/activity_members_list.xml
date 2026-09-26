@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center">
+  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscriptos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Buscar por nombre o DNI"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/primary" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carlos Mendoza"
+        android:textSize="12sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DNI: 38297049"
+        android:textSize="12sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vence: 15/10/2026"
+        android:textSize="12sp"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carnet"
+        android:backgroundTint="@color/secondary" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar"
+        android:backgroundTint="@color/primary" />
+</LinearLayout>

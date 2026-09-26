@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vencimientos hoy"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viernes 25 de Septiembre 2026"
+        android:textSize="12sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 socios con vencimiento hoy"
+        android:textSize="16sp"
+        android:textColor="@color/orange"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/toast" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <!-- IZQUIERDA -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valentina Ortiz"
+                android:textSize="12sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DNI: 38297049"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <!-- DERECHA -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SOCIO"
+                android:textSize="12sp"
+                android:gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+        <!-- IZQUIERDA -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ultimo periodo pago:"
+                android:textSize="12sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <!-- DERECHA -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Julio 2026"
+                android:textSize="12sp"
+                android:gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

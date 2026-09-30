@@ -8,4 +8,9 @@
     <string name="app_new_student">Nuevo alumno</string>
     <string name="app_student_name">Nombre</string>
     <string name="app_back_btn">Volver</string>
+    <string name="app_login_error">Los datos ingresados no son correctos. Verifiquelos y vuelva a intentarlo.</string>
+    <string name="app_function_unavailable">Esta funcionalidad no esta disponible</string>
+
+    <string name="home_section_title">Menu</string>
+    <string name="home_admin_greetings">Hola administardor!</string>
 </resources>

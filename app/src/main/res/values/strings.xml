@@ -7,4 +7,5 @@
     <string name="app_login">Ingresar</string>
     <string name="app_new_student">Nuevo alumno</string>
     <string name="app_student_name">Nombre</string>
+    <string name="app_back_btn">Volver</string>
 </resources>

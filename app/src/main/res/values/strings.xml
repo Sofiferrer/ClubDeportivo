@@ -11,6 +11,11 @@
     <string name="app_login_error">Los datos ingresados no son correctos. Verifiquelos y vuelva a intentarlo.</string>
     <string name="app_function_unavailable">Esta funcionalidad no esta disponible</string>
 
+    <string name="general_name">Nombre</string>
+    <string name="general_surname">Apellido</string>
+    <string name="general_id">DNI</string>
+    <string name="general_save">Guardar</string>
+
     <string name="home_section_title">Menu principal</string>
     <string name="home_admin_greetings">Hola administardor!</string>
     <string name="home_create_member_title">Inscribir Alumno</string>
@@ -19,4 +24,13 @@
     <string name="home_list_member_description">Consulta y filtra la lista de estudiantes inscritos, emite carnets y registra cobros</string>
     <string name="home_overdue_list_title">Listado de Vencimientos</string>
     <string name="home_overdue_list_description">Verifica quiénes tienen pagos vencidos hoy y gestiona alertas de cobro</string>
+
+    <string name="create_section_title">Nuevo alumno</string>
+    <string name="create_is_partner">Socio activo</string>
+    <string name="create_health_check">Apto físico entregado</string>
+    <string name="create_notes">
+        Socio = abona cuota mensual\n
+        No-Socio = abona cuota por día\n
+        Todos los campos son obligatorios para guardar
+    </string>
 </resources>

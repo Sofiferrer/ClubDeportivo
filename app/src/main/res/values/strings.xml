@@ -28,11 +28,7 @@
     <string name="create_section_title">Nuevo alumno</string>
     <string name="create_is_partner">Socio activo</string>
     <string name="create_health_check">Apto físico entregado</string>
-    <string name="create_notes">
-        Socio = abona cuota mensual\n
-        No-Socio = abona cuota por día\n
-        Todos los campos son obligatorios para guardar
-    </string>
+    <string name="create_notes">Socio = abona cuota mensual\nNo-Socio = abona cuota por día\nTodos los campos son obligatorios para guardar</string>
     <string name="create_success">Alumno guardado exitosamente</string>
 
     <string name="member_section_title">Inscriptos</string>

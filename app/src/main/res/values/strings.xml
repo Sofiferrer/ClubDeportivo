@@ -11,6 +11,12 @@
     <string name="app_login_error">Los datos ingresados no son correctos. Verifiquelos y vuelva a intentarlo.</string>
     <string name="app_function_unavailable">Esta funcionalidad no esta disponible</string>
 
-    <string name="home_section_title">Menu</string>
+    <string name="home_section_title">Menu principal</string>
     <string name="home_admin_greetings">Hola administardor!</string>
+    <string name="home_create_member_title">Inscribir Alumno</string>
+    <string name="home_create_member_description">Registra un nuevo alumno, define su categoría de socio y genera su perfil</string>
+    <string name="home_list_member_title">Ver Inscriptos</string>
+    <string name="home_list_member_description">Consulta y filtra la lista de estudiantes inscritos, emite carnets y registra cobros</string>
+    <string name="home_overdue_list_title">Listado de Vencimientos</string>
+    <string name="home_overdue_list_description">Verifica quiénes tienen pagos vencidos hoy y gestiona alertas de cobro</string>
 </resources>

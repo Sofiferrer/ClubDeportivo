@@ -15,6 +15,7 @@
     <string name="general_surname">Apellido</string>
     <string name="general_id">DNI</string>
     <string name="general_save">Guardar</string>
+    <string name="general_share">Compartir</string>
 
     <string name="home_section_title">Menu principal</string>
     <string name="home_admin_greetings">Hola administardor!</string>
@@ -35,4 +36,11 @@
 
     <string name="member_card_credential">Carnet</string>
     <string name="member_card_pay">Pagar</string>
+
+    <string name="credential_section_title">Credencial</string>
+    <string name="credential_club_subsidiary">Cede central</string>
+    <string name="credential_picture_description">Foto del alumno</string>
+    <string name="credential_start">INICIO</string>
+    <string name="credential_category">CATEGORÍA</string>
+    <string name="credential_save_success">La credencial se guardo en tu dispositivo</string>
 </resources>

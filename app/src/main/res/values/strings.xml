@@ -34,4 +34,9 @@
         Todos los campos son obligatorios para guardar
     </string>
     <string name="create_success">Alumno guardado exitosamente</string>
+
+    <string name="member_section_title">Inscriptos</string>
+
+    <string name="member_card_credential">Carnet</string>
+    <string name="member_card_pay">Pagar</string>
 </resources>

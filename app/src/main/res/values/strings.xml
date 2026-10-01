@@ -8,7 +8,7 @@
     <string name="app_new_student">Nuevo alumno</string>
     <string name="app_student_name">Nombre</string>
     <string name="app_back_btn">Volver</string>
-    <string name="app_login_error">Los datos ingresados no son correctos. Verifiquelos y vuelva a intentarlo.</string>
+    <string name="app_login_error">Los datos ingresados no son correctos. Verifiquelos y vuelva a intentarlo</string>
     <string name="app_function_unavailable">Esta funcionalidad no esta disponible</string>
 
     <string name="general_name">Nombre</string>
@@ -33,4 +33,5 @@
         No-Socio = abona cuota por día\n
         Todos los campos son obligatorios para guardar
     </string>
+    <string name="create_success">Alumno guardado exitosamente</string>
 </resources>

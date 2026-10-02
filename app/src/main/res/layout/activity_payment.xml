@@ -51,16 +51,19 @@
         android:textSize="12sp"
         android:textStyle="bold"/>
     <RadioGroup
+        android:id="@+id/rgPaymentMethod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal">
         <RadioButton
+            android:id="@+id/rbCash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Efectivo"
             android:textSize="12sp"/>
         <RadioButton
+            android:id="@+id/rbCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tarjeta"
@@ -73,16 +76,19 @@
         android:textSize="12sp"
         android:textStyle="bold"/>
     <RadioGroup
+        android:id="@+id/rgPaymentParts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal">
         <RadioButton
+            android:id="@+id/rbParts3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/payment_parts_3"
             android:textSize="12sp"/>
         <RadioButton
+            android:id="@+id/rbParts6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/payment_parts_6"

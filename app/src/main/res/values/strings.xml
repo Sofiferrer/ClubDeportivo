@@ -16,6 +16,7 @@
     <string name="general_id">DNI</string>
     <string name="general_save">Guardar</string>
     <string name="general_share">Compartir</string>
+    <string name="general_cancel">Cancelar</string>
 
     <string name="home_section_title">Menu principal</string>
     <string name="home_admin_greetings">Hola administardor!</string>
@@ -45,6 +46,14 @@
     <string name="credential_save_success">La credencial se guardo en tu dispositivo</string>
 
     <string name="overdue_section_title">Vencimientos de hoy</string>
-    
+
     <string name="overdue_card_last_payment">Último pago registrado:</string>
+
+    <string name="payment_title">REGISTRAR PAGO</string>
+    <string name="payment_amount">MONTO CUOTA</string>
+    <string name="payment_method">Método de pago</string>
+    <string name="payment_parts">Cuotas sin interés</string>
+    <string name="payment_parts_3">3 cuotas</string>
+    <string name="payment_parts_6">6 cuotas</string>
+    <string name="payment_success">Se registro el pago correctamente</string>
 </resources>

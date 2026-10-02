@@ -7,122 +7,28 @@
     android:layout_height="match_parent"
     android:padding="24dp"
     android:orientation="vertical"
-    android:gravity="center">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="30dp">
-        <!-- IZQUIERDA -->
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="<-"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white" />
-        <!-- DERECHA -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vencimientos hoy"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
-    </LinearLayout>
-
+    android:gravity="top">
+    <include layout="@layout/section_title_toolbar"/>
     <TextView
+        android:id="@+id/lblToday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Viernes 25 de Septiembre 2026"
         android:textSize="12sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="-16dp"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="4 socios con vencimiento hoy"
-        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/toast"
+        android:text="Hoy vencen las cuotas de 4 socios"
         android:textColor="@color/orange"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/toast" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp">
-        <!-- IZQUIERDA -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Valentina Ortiz"
-                android:textSize="12sp"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="DNI: 38297049"
-                android:textSize="12sp"
-                android:gravity="center"/>
-        </LinearLayout>
-        <!-- DERECHA -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SOCIO"
-                android:textSize="12sp"
-                android:gravity="end"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="30dp">
-        <!-- IZQUIERDA -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ultimo periodo pago:"
-                android:textSize="12sp"
-                android:gravity="center"/>
-
-        </LinearLayout>
-        <!-- DERECHA -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Julio 2026"
-                android:textSize="12sp"
-                android:gravity="end"/>
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
-
-
-
+        android:textAlignment="center"
+        android:textSize="16sp" />
+    <include layout="@layout/member_card_overdue"/>
+    <include layout="@layout/member_card_overdue"/>
+    <include layout="@layout/member_card_overdue"/>
+    <include layout="@layout/member_card_overdue"/>
 </LinearLayout>

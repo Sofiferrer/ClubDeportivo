@@ -7,4 +7,53 @@
     <string name="app_login">Ingresar</string>
     <string name="app_new_student">Nuevo alumno</string>
     <string name="app_student_name">Nombre</string>
+    <string name="app_back_btn">Volver</string>
+    <string name="app_login_error">Los datos ingresados no son correctos. Verifiquelos y vuelva a intentarlo</string>
+    <string name="app_function_unavailable">Esta funcionalidad no esta disponible</string>
+
+    <string name="general_name">Nombre</string>
+    <string name="general_surname">Apellido</string>
+    <string name="general_id">DNI</string>
+    <string name="general_save">Guardar</string>
+    <string name="general_share">Compartir</string>
+    <string name="general_cancel">Cancelar</string>
+
+    <string name="home_section_title">Menu principal</string>
+    <string name="home_admin_greetings">Hola administardor!</string>
+    <string name="home_create_member_title">Inscribir Alumno</string>
+    <string name="home_create_member_description">Registra un nuevo alumno, define su categoría de socio y genera su perfil</string>
+    <string name="home_list_member_title">Ver Inscriptos</string>
+    <string name="home_list_member_description">Consulta y filtra la lista de estudiantes inscritos, emite carnets y registra cobros</string>
+    <string name="home_overdue_list_title">Listado de Vencimientos</string>
+    <string name="home_overdue_list_description">Verifica quiénes tienen pagos vencidos hoy y gestiona alertas de cobro</string>
+
+    <string name="create_section_title">Nuevo alumno</string>
+    <string name="create_is_partner">Socio activo</string>
+    <string name="create_health_check">Apto físico entregado</string>
+    <string name="create_notes">Socio = abona cuota mensual\nNo-Socio = abona cuota por día\nTodos los campos son obligatorios para guardar</string>
+    <string name="create_success">Alumno guardado exitosamente</string>
+
+    <string name="member_section_title">Inscriptos</string>
+
+    <string name="member_card_credential">Carnet</string>
+    <string name="member_card_pay">Pagar</string>
+
+    <string name="credential_section_title">Credencial</string>
+    <string name="credential_club_subsidiary">Cede central</string>
+    <string name="credential_picture_description">Foto del alumno</string>
+    <string name="credential_start">INICIO</string>
+    <string name="credential_category">CATEGORÍA</string>
+    <string name="credential_save_success">La credencial se guardo en tu dispositivo</string>
+
+    <string name="overdue_section_title">Vencimientos de hoy</string>
+
+    <string name="overdue_card_last_payment">Último pago registrado:</string>
+
+    <string name="payment_title">REGISTRAR PAGO</string>
+    <string name="payment_amount">MONTO CUOTA</string>
+    <string name="payment_method">Método de pago</string>
+    <string name="payment_parts">Cuotas sin interés</string>
+    <string name="payment_parts_3">3 cuotas</string>
+    <string name="payment_parts_6">6 cuotas</string>
+    <string name="payment_success">Se registro el pago correctamente</string>
 </resources>

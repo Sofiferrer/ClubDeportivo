@@ -14,20 +14,25 @@ class MembersListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_members_list)
 
         val lblSectionTitle = findViewById<TextView>(R.id.lblSectionTitle)
-        val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        val btnViewCredential = findViewById<Button>(R.id.btnViewCredential)
-        val btnPay = findViewById<Button>(R.id.btnPay)
-
         lblSectionTitle.setText(R.string.member_section_title)
 
+        val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }
 
+        val btnViewCredential = findViewById<Button>(R.id.btnViewCredential)
         btnViewCredential.setOnClickListener {
             val intent = Intent(this, MemberCredentialActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val btnPay = findViewById<Button>(R.id.btnPay)
+        btnPay.setOnClickListener {
+            val intent = Intent(this, PaymentActivity::class.java)
             startActivity(intent)
             finish()
         }

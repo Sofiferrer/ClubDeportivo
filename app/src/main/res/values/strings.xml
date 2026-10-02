@@ -43,4 +43,8 @@
     <string name="credential_start">INICIO</string>
     <string name="credential_category">CATEGORÍA</string>
     <string name="credential_save_success">La credencial se guardo en tu dispositivo</string>
+
+    <string name="overdue_section_title">Vencimientos de hoy</string>
+    
+    <string name="overdue_card_last_payment">Último pago registrado:</string>
 </resources>

@@ -23,6 +23,6 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:text="@string/app_name"
+        android:text="Inscriptos"
     />
 </LinearLayout>

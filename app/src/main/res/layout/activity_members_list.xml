@@ -10,4 +10,6 @@
     android:gravity="center">
     <include layout="@layout/section_title_toolbar" />
     <include layout="@layout/member_card" />
+    <include layout="@layout/member_card" />
+    <include layout="@layout/member_card" />
 </LinearLayout>

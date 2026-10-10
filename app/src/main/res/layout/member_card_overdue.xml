@@ -6,27 +6,32 @@
     android:layout_height="wrap_content"
     android:background="@drawable/border_layout"
     android:orientation="vertical"
-    android:layout_marginBottom="8sp">
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2"
-        android:layout_marginBottom="8sp">
+        android:layout_marginBottom="8dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_columnWeight="8">
             <TextView
+                android:id="@+id/lblOverdueName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Carlos Mendoza"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
             <TextView
+                android:id="@+id/lblOverdueDni"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DNI: 33.222.111"
-                android:textSize="12sp"/>
+                android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_columnWeight="2"
@@ -35,11 +40,15 @@
             android:orientation="vertical"
             android:gravity="center_vertical|center_horizontal">
             <TextView
+                android:id="@+id/lblOverdueType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SOCIO"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
                 android:backgroundTint="@color/secondary"
-                android:textColor="@color/primary"/>
+                android:textColor="@color/primary"
+                android:textStyle="bold"/>
         </LinearLayout>
     </GridLayout>
     <com.google.android.material.divider.MaterialDivider
@@ -57,6 +66,7 @@
             android:text="@string/overdue_card_last_payment"
             android:textSize="12sp"/>
         <TextView
+            android:id="@+id/lblOverdueLastPayment"
             android:layout_columnWeight="5"
             android:textAlignment="textEnd"
             android:layout_width="wrap_content"
@@ -65,4 +75,11 @@
             android:textSize="12sp"
             android:textStyle="bold"/>
     </GridLayout>
+    <Button
+        android:id="@+id/btnOverduePay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/member_card_pay"
+        android:backgroundTint="@color/primary" />
 </LinearLayout>

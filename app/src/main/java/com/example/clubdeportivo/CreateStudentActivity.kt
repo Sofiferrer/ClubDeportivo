@@ -10,12 +10,22 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.clubdeportivo.db.DatabaseHelper
+import com.example.clubdeportivo.models.Alumno
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class CreateStudentActivity : AppCompatActivity() {
+    private lateinit var dbHelper: DatabaseHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_create_student)
+
+        dbHelper = DatabaseHelper.getInstance(this)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -30,26 +40,10 @@ class CreateStudentActivity : AppCompatActivity() {
         }
 
         val inputName = findViewById<EditText>(R.id.inputName)
-        fun isNameValid(): Boolean {
-            return inputName.text.isNotEmpty()
-        }
-
         val inputSurname = findViewById<EditText>(R.id.inputSurname)
-        fun isSurnameValid(): Boolean {
-            return inputSurname.text.isNotEmpty()
-        }
-
         val inputId = findViewById<EditText>(R.id.inputId)
-        fun isIDValid(): Boolean {
-            return inputId.text.isNotEmpty()
-        }
-
         val swIsPartner = findViewById<SwitchCompat>(R.id.swIsPartner)
-
         val swHealthCheckDone = findViewById<SwitchCompat>(R.id.swHealthCheckDone)
-        fun isHealthCheckDone(): Boolean {
-            return swHealthCheckDone.isChecked
-        }
 
         fun clear() {
             inputName.text.clear()
@@ -61,15 +55,48 @@ class CreateStudentActivity : AppCompatActivity() {
 
         val btnSave = findViewById<Button>(R.id.btnSave)
         btnSave.setOnClickListener {
-            if(isNameValid() && isSurnameValid() && isIDValid()) {
-                clear()
-                Toast.makeText(
-                    this,
-                    R.string.create_success,
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-            else {
+            val name = inputName.text.toString().trim()
+            val surname = inputSurname.text.toString().trim()
+            val dni = inputId.text.toString().trim()
+
+            if (name.isNotEmpty() && surname.isNotEmpty() && dni.isNotEmpty()) {
+                val existing = dbHelper.getAlumnoByDni(dni)
+                if (existing != null) {
+                    Toast.makeText(
+                        this,
+                        "Ya existe un alumno con el DNI ingresado",
+                        Toast.LENGTH_LONG
+                    ).show()
+                    return@setOnClickListener
+                }
+
+                val todayStr = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
+                val newAlumno = Alumno(
+                    nombre = name,
+                    apellido = surname,
+                    dni = dni,
+                    esSocio = swIsPartner.isChecked,
+                    aptoFisico = swHealthCheckDone.isChecked,
+                    fechaAlta = todayStr,
+                    fechaVencimiento = null
+                )
+
+                val resultId = dbHelper.insertAlumno(newAlumno)
+                if (resultId > 0) {
+                    clear()
+                    Toast.makeText(
+                        this,
+                        R.string.create_success,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+                    Toast.makeText(
+                        this,
+                        "Error al guardar el alumno",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            } else {
                 Toast.makeText(
                     this,
                     R.string.app_login_error,

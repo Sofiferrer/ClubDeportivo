@@ -14,6 +14,7 @@
         android:textColor="@color/primary"
         android:text="@string/payment_title"/>
     <TextView
+        android:id="@+id/lblPaymentStudentName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
@@ -37,6 +38,7 @@
             android:textSize="12sp"
             android:text="@string/payment_amount"/>
         <TextView
+            android:id="@+id/lblPaymentAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$ 5000,00"
@@ -61,6 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Efectivo"
+            android:checked="true"
             android:textSize="12sp"/>
         <RadioButton
             android:id="@+id/rbCard"
@@ -86,12 +89,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/payment_parts_3"
+            android:enabled="false"
             android:textSize="12sp"/>
         <RadioButton
             android:id="@+id/rbParts6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/payment_parts_6"
+            android:enabled="false"
             android:textSize="12sp" />
     </RadioGroup>
     <LinearLayout
@@ -102,6 +107,7 @@
         android:padding="8sp"
         android:layout_marginVertical="8sp">
         <TextView
+            android:id="@+id/lblPaymentPeriod"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Periodo 01/10/2026 - 31/10/2026"

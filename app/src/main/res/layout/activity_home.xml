@@ -62,11 +62,13 @@
         </LinearLayout>
     </LinearLayout>
     <TextView
+        android:id="@+id/lblHomeOverdueBanner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:background="@drawable/toast"
-        android:text="Hoy vencen las cuotas de 4 socios"
+        android:padding="12dp"
+        android:text="Hoy vencen las cuotas de 0 socios"
         android:textColor="@color/orange"
         android:textSize="16sp"
         android:textAlignment="center"/>

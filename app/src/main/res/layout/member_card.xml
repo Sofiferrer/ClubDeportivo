@@ -6,69 +6,104 @@
     android:layout_height="wrap_content"
     android:background="@drawable/border_layout"
     android:orientation="vertical"
-    android:layout_marginBottom="8sp">
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2"
-        android:layout_marginBottom="8sp">
+        android:layout_marginBottom="8dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_columnWeight="8">
             <TextView
+                android:id="@+id/lblMemberName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Carlos Mendoza"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp"/>
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
             <TextView
+                android:id="@+id/lblMemberDni"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DNI: 33.222.111"
-                android:textSize="12sp"/>
+                android:textSize="13sp"/>
             <TextView
+                android:id="@+id/lblMemberExpiry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vence: 31/10/2026"
-                android:textSize="12sp"/>
+                android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_columnWeight="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center_vertical|center_horizontal">
+            android:gravity="center_vertical|end">
             <TextView
+                android:id="@+id/lblMemberType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SOCIO"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
                 android:backgroundTint="@color/secondary"
-                android:textColor="@color/primary"/>
+                android:textColor="@color/primary"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/lblMemberStatusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INACTIVO"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#EF4444"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="2dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"/>
         </LinearLayout>
     </GridLayout>
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2">
+        android:orientation="horizontal">
         <Button
-            android:layout_columnWeight="5"
-            android:layout_marginEnd="4dp"
             android:id="@+id/btnViewCredential"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
             android:text="@string/member_card_credential"
             android:textColor="@color/primary"
             android:backgroundTint="@color/secondary"
-            />
+            android:textSize="12sp"
+            android:paddingHorizontal="4dp" />
         <Button
-            android:layout_marginStart="4dp"
-            android:layout_columnWeight="5"
             android:id="@+id/btnPay"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
             android:text="@string/member_card_pay"
-            android:backgroundTint="@color/primary" />
-    </GridLayout>
+            android:backgroundTint="@color/primary"
+            android:textSize="12sp"
+            android:paddingHorizontal="4dp" />
+        <Button
+            android:id="@+id/btnToggleStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Baja"
+            android:backgroundTint="#EF4444"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingHorizontal="4dp" />
+    </LinearLayout>
 </LinearLayout>

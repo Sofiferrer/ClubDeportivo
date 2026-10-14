@@ -26,7 +26,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".CreateStudentActivity"
+            android:name=".CreateMemberActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity

@@ -2,7 +2,6 @@ package com.example.clubdeportivo
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -25,16 +24,9 @@ class HomeActivity : AppCompatActivity() {
         val lblUsername = findViewById<TextView>(R.id.lblUsername)
         lblUsername.text = "Carlos Mendoza" // JUST FOR TEST //
 
-        val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        btnBack.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
         val cardAddStudent = findViewById<LinearLayout>(R.id.cardAddStudent)
         cardAddStudent.setOnClickListener {
-            val intent = Intent(this, CreateStudentActivity::class.java)
+            val intent = Intent(this, CreateMemberActivity::class.java)
             startActivity(intent)
             finish()
         }
